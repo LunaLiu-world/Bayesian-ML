@@ -140,6 +140,25 @@ R² Score (Predictive Accuracy): 0.8421
   <img width="545" alt="Image" src="https://github.com/user-attachments/assets/2d92891f-a359-42e9-84c7-418d58b45c5e" />
 
 
+#### Hierarchical Bayesian Model  
+##### Description:  
+Parameters: Uses hierarchical priors to model dependencies within categorical variables and normal priors for numerical predictors  
+Common Use Cases: Loan risk assessment, interest rate prediction, and modeling structured dependencies in financial data  
+
+##### Formula:  
+P(β|X, y) ∝ P(y|X, β) × P(β) × P(θ)  
+(where P(θ) represents hierarchical priors for categorical variables)  
+
+##### Results:  
+- Test MSE: 41.5861  
+- Test R²: Not explicitly provided  
+- Test MAE: 5.7300  
+- Test RMSE: 6.4487  
+
+##### Interpretation:  
+- The model effectively captures structured relationships within borrower and loan features  
+- The presence of residual patterns suggests that incorporating nonlinear relationships could improve performance  
+- Potential improvements include refining hyperparameters, testing alternative priors, and integrating external economic indicators such as macroeconomic trends or credit risk scores  
 
 
 
